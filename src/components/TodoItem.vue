@@ -1,0 +1,75 @@
+<script setup lang="ts">
+import data from '../service/todoData'
+import { ref } from 'vue';
+// import { ITodo } from '../components/todo/interface/todo.interface';
+// const data: ITodo[] = [
+//   {
+//     id: genTodoId(),
+//     title: 'React.js',
+//     completed: false,
+//   },
+//   {
+//     id: genTodoId(),
+//     title: 'Vue.js',
+//     completed: true,
+//   },
+//   {
+//     id: genTodoId(),
+//     title: 'Angular2+',
+//     completed: false,
+//   },
+//   { id: genTodoId(), title: 'iles.js', completed: false },
+// ];
+
+let todoData = ref(data);
+
+
+function deleteTask(id: string): void {
+  console.log(id)
+  todoData.value = todoData.value.filter(td => td.id !== id)
+}
+
+function toggleTaskComplete(taskId: string): void {
+  console.log(typeof data)
+  todoData.value =
+    todoData.value.map(({ id, title, completed }) => ({
+      id,
+      title,
+      completed: taskId === id ? !completed : completed
+    }))
+}
+
+
+function addTodo(newTodo: any): void {
+  console.log(newTodo)
+  if (newTodo) {
+    todoData.value.push({
+      ...newTodo
+    });
+    console.log(todoData)
+  }
+}
+</script>
+
+<template>
+  <div class="todoItem">
+    <AddTodo @addTodo="addTodo" />
+    <div class="todo">
+      <Todo :todoData="todoData" @deleteTask="deleteTask" @toggleTaskComplete="toggleTaskComplete" />
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.todoItem {
+  width: 50%;
+  height: 60vh;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.todo {
+  height: 60vh;
+  overflow-x: auto;
+}
+</style>
