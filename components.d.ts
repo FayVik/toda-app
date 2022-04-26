@@ -10,7 +10,6 @@ declare module 'vue' {
     Todo: typeof import('./src/components/todo/Todo.vue')['default']
     'Todo.interface': typeof import('./src/components/todo/interface/todo.interface.ts')['default']
     TodoItem: typeof import('./src/components/TodoItem.vue')['default']
-    ToolingIcon: typeof import('./src/components/icons/ToolingIcon.vue')['default'];
   }
 }
 
