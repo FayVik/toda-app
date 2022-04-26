@@ -4,14 +4,16 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AddTodo: typeof import('./src/components/todo/AddTodo.vue')['default']
     CommunityIcon: typeof import('./src/components/icons/CommunityIcon.vue')['default']
     DocumentationIcon: typeof import('./src/components/icons/DocumentationIcon.vue')['default']
     EcosystemIcon: typeof import('./src/components/icons/EcosystemIcon.vue')['default']
-    FrameworkLink: typeof import('./src/components/FrameworkLink.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Island: typeof import('./node_modules/iles/dist/client/app/components/Island.vue')['default']
+    Navbar: typeof import('./src/components/Navbar.vue')['default']
     SupportIcon: typeof import('./src/components/icons/SupportIcon.vue')['default']
+    Todos: typeof import('./src/components/todo/Todos.vue')['default']
     ToolingIcon: typeof import('./src/components/icons/ToolingIcon.vue')['default']
+    ViewTodo: typeof import('./src/components/todo/ViewTodo.vue')['default']
     Welcome: typeof import('./src/components/Welcome.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }

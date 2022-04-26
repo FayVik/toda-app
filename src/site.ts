@@ -1,4 +1,6 @@
+/** @format */
+
 export default {
-  title: 'îles',
-  description: 'Islands of interactivity with Vue in Vite.js'
-}
+	title: 'Todo List App',
+	description: 'What is the task for the day?',
+};
