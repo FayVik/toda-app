@@ -34,7 +34,7 @@ function emitDeleteTask(id: string): void {
   background: #f4f4f4;
   padding: 10px;
   border-bottom: 1px #ccc dotted;
-  margin: 10px 10px 0 10px;
+  margin: 10px 0px;
 }
 
 .completed {

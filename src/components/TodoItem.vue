@@ -1,25 +1,7 @@
 <script setup lang="ts">
+
 import data from '../service/todoData'
 import { ref } from 'vue';
-// import { ITodo } from '../components/todo/interface/todo.interface';
-// const data: ITodo[] = [
-//   {
-//     id: genTodoId(),
-//     title: 'React.js',
-//     completed: false,
-//   },
-//   {
-//     id: genTodoId(),
-//     title: 'Vue.js',
-//     completed: true,
-//   },
-//   {
-//     id: genTodoId(),
-//     title: 'Angular2+',
-//     completed: false,
-//   },
-//   { id: genTodoId(), title: 'iles.js', completed: false },
-// ];
 
 let todoData = ref(data);
 
