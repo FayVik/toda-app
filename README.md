@@ -1,7 +1,6 @@
 # toda-app
 
-[îles]: https://github.com/ElMassimo/iles
-[configuration reference]: https://iles-docs.netlify.app/config
+[îles]: https://iles-docs.netlify.app/guide/introduction
 
 This todo app is built with [îles].
 
