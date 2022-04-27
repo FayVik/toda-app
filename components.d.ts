@@ -6,6 +6,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     AddTodo: typeof import('./src/components/todo/AddTodo.vue')['default']
     Interface: typeof import('./src/components/todo/interface/index.ts')['default']
+    Island: typeof import('./node_modules/iles/dist/client/app/components/Island.vue')['default']
     Navbar: typeof import('./src/components/Navbar.vue')['default']
     Todo: typeof import('./src/components/todo/Todo.vue')['default']
     'Todo.interface': typeof import('./src/components/todo/interface/todo.interface.ts')['default']

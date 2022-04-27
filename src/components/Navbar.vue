@@ -1,10 +1,8 @@
-<!-- @format -->
-
 <script setup lang="ts">
-	defineProps<{
-		title: String;
-		description: String;
-	}>();
+defineProps<{
+	title: String;
+	description: String;
+}>();
 </script>
 
 <template>
@@ -15,17 +13,19 @@
 </template>
 
 <style scoped>
-	.greetings {
-		text-align: center;
-	}
-	h1 {
-		font-weight: 500;
-		font-size: 2.6rem;
-		margin: 0;
-		color: green;
-	}
-	p {
-		font-weight: 500;
-		font-size: 1rem;
-	}
+.greetings {
+	text-align: center;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 2.6rem;
+	margin: 0;
+	color: green;
+}
+
+p {
+	font-weight: 500;
+	font-size: 1rem;
+}
 </style>

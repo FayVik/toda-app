@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="wrapper">
-      <Navbar :title="$site.title"  :description="$site.description"/>
+      <Navbar :title="$site.title" :description="$site.description" />
     </div>
   </header>
   <slot />
@@ -10,11 +10,10 @@
 <style>
 @import '~/assets/base.css';
 
-header{
+header {
   min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 </style>
