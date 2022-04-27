@@ -7,12 +7,10 @@ let todoData = ref(data);
 
 
 function deleteTask(id: string): void {
-  console.log(id)
   todoData.value = todoData.value.filter(td => td.id !== id)
 }
 
 function toggleTaskComplete(taskId: string): void {
-  console.log(typeof data)
   todoData.value =
     todoData.value.map(({ id, title, completed }) => ({
       id,
@@ -23,12 +21,10 @@ function toggleTaskComplete(taskId: string): void {
 
 
 function addTodo(newTodo: any): void {
-  console.log(newTodo)
   if (newTodo) {
     todoData.value.push({
       ...newTodo
     });
-    console.log(todoData)
   }
 }
 </script>
